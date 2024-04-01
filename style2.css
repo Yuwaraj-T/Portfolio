@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style:none ;
+}
+
+/* ------------------------Navigation Bar------------------------ */
+
+header{
+    height: 80px;
+    background-color: rgb(247, 243, 243);
+}
+.nav_img img{
+    width: 100px;
+    margin:20px 0px 0px 100px;
+    align-items: center;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.nav_items{
+    margin: 5px 110px 0px 0px;
+}
+.nav_items ul li{
+    display: inline;
+    margin: 0px 4px 0px 60px;
+    font-size: 18px;
+}
+/* ----------------------------END----------------------- */
+
+
+/* --------------------------------------- Content-----------------------------------------  */
+
+.content{
+    position: relative;
+    height: 570px;
+    background-color: rgb(247, 243, 243);
+}
+
+/* -----------------------Shape------------------------- */
+.shape{
+    position: absolute;
+    width: 540px;
+    right: 32px;
+    bottom: 20px;
+    transform: rotate(180deg);
+    scale:1;
+    transition: bottom 0.7s, scale 0.2s;
+}
+
+.shape:hover{
+    bottom:40px;
+}
+
+/* ----------------------Intro----------------------- */
+.intro{
+    
+    position:absolute;
+    bottom: 35%;
+    left:10%;
+    scale:1;
+    transition:scale .2s;
+    
+}
+.intro p{
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: left;  
+}
+.intro h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+#span1{
+    color: aqua;
+}
+#span-2{
+    font-size: 14px;
+    text-align: left;
+}
+
+/* -----------------------Button----------------------- */
+#btn{
+    margin: 15px 0px;
+    padding: 5px 5px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s, scale 0.3s;
+    
+}
+#btn:hover{
+    transform: translateX(5px);
+    transform-style: ease-in;
+    background-color: rgb(73, 71, 71);
+    color: white;
+    scale: 1.1;
+}
+
+/* ----------------------------------------END---------------------------------------- */
+
+/* --------------------------------------------Responsive--------------------------------------------- */
+
+@media (max-width: 1200px) {
+    .content{
+        position: relative;
+        background-color: rgb(247, 243, 243);
+    }
+
+    /* -----------------------Shape------------------------- */
+    .shape{
+        position: absolute;
+        width: 550px;
+        right: 32px;
+        bottom: 0px;
+        transform: rotate(180deg);
+        scale:0.9;
+        transition: bottom 0.7s, scale 0.2s;
+    }
+
+    .shape:hover{
+        bottom:30px;
+    } 
+
+    .intro{
+        scale:0.9;
+        transition:.2s;
+    }
+}
+
+
+
+
+
+@media(max-width:1000px){
+    .content{
+        position: relative;
+        height: 1140px;
+        background-color: rgb(247, 243, 243);
+    }
+
+    .intro{
+        top:20%;
+        left:34%;
+        scale:1;
+        transition:scale .2s;
+    }
+
+    .shape{
+        left:23%;
+        bottom:10px;
+        scale:1;
+        transition:bottom 0.7s, scale .2s;
+    }
+    .shape:hover{
+        bottom:40px;
+    }
+    
+}
+
+@media(max-width:850px){
+    .content{
+        position: relative;
+        height: 1140px;
+        background-color: rgb(247, 243, 243);
+    }
+
+    .intro{
+        top:20%;
+        left:30%;
+    }
+
+    .shape{
+        left:17%;
+    }
+    
+}
+
+@media(max-width:650px){
+    .content{
+        position: relative;
+        height: 1140px;
+        background-color: rgb(247, 243, 243);
+    }
+
+    .intro{
+        top:20%;
+        left:26%;
+        transition:left .2s;
+    }
+
+    .shape{
+        left:12%;
+        transition:left .2s;
+    }
+    
+}
+
+@media (max-width:412px){
+
+}
